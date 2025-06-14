@@ -14,65 +14,84 @@
 
 //---------------------------- Program Constants ----------------------------------------------------------------------
 
-extern File dataFile;                   // Declare the external File object
-const int chipSelect = BUILTIN_SDCARD;  // where to stor the log file
-
 #define VEL_UPDATE_STIME 0.01f  // Time interval for velocity updates (in seconds)
-#define VEL_UPDATE_UTIME 10000 // Time interval for velocity updates (in microseconds)
-#define VEL_UPDATE_freq 100 // Frequency in Hz to update stepper motor stepping Frequency
+#define VEL_UPDATE_UTIME 10000  // Time interval for velocity updates (in microseconds)
+#define VEL_UPDATE_freq 100     // Frequency in Hz to update stepper motor stepping Frequency
 
 #define CMD_BUFFER_SIZE 1024
 #define baudRate 115200
 #define JOINT_NUM 6
 
 // Link 1 parameters
-#define JOINT1_MAX 1.96706f    // Maximum joint angle in radians (170°)
-#define JOINT1_MIN -1.96706f   // Minimum joint angle in radians (-170°)
-#define JOINT1_SPR 600000l     // steps per rev
-#define JOINT1_MAX_VEL 128000  // Max Velcity (steps / sec)
-#define JOINT1_MAX_ACC 1000    // Max Acceleration (steps / sec^2)
+#define JOINT1_MAX_RAD 1.96706f    // Maximum joint angle in radians (170°)
+#define JOINT1_MIN_RAD -1.96706    // Minimum joint angle in radians (-170°)
+#define JOINT1_SPR 600000l         // steps per rev
+#define JOINT1_MAX_STEPS 283333l   // Maximum step value (-170°)
+#define JOINT1_MIN_STEPS -283333l  // Minimum step value (-170°)
+#define JOINT1_MAX_VEL 128000      // Max Velcity (steps / sec)
+#define JOINT1_MAX_ACC 1000        // Max Acceleration (steps / sec^2)
 
 // Link 2 parameters
-#define JOINT2_MAX HALF_PI     // Maximum joint angle in radians (90°)
-#define JOINT2_MIN -0.733038f  // Minimum joint angle in radians (-42°)
-#define JOINT2_SPR 600000l     // steps per rev
-#define JOINT2_MAX_VEL 125000  // Max Velcity (steps / sec)
-#define JOINT2_MAX_ACC 1000    // Max Acceleration (steps / sec^2)
+#define JOINT2_MAX_RAD HALF_PI     // Maximum joint angle in radians (90°)
+#define JOINT2_MIN_RAD -0.733038f  // Minimum joint angle in radians (-42°)
+#define JOINT2_SPR 600000l         // steps per rev
+#define JOINT2_MAX_STEPS 150000l   // Maximum step value (90°)
+#define JOINT2_MIN_STEPS -70000l   // Minimum step value (-42°)
+#define JOINT2_MAX_VEL 125000      // Max Velcity (steps / sec)
+#define JOINT2_MAX_ACC 1000        // Max Acceleration (steps / sec^2)
 
 // Link 3 parameters
-#define JOINT3_MAX 0.90751f    // Maximum joint angle in radians (52°)
-#define JOINT3_MIN -1.55334f   // Minimum joint angle in radians (-89°)
-#define JOINT3_SPR 600000l     // steps per rev
-#define JOINT3_MAX_VEL 125000  // Max Velcity (steps / sec)
-#define JOINT3_MAX_ACC 1000    // Max Acceleration (steps / sec^2)
+#define JOINT3_MAX_RAD 0.90751f    // Maximum joint angle in radians (52°)
+#define JOINT3_MIN_RAD -1.55334f   // Minimum joint angle in radians (-89°)
+#define JOINT3_SPR 600000l         // steps per rev
+#define JOINT3_MAX_STEPS 86667l    // Maximum step value (52°)
+#define JOINT3_MIN_STEPS -148333l  // Minimum step value (-89°)
+#define JOINT3_MAX_VEL 125000      // Max Velcity (steps / sec)
+#define JOINT3_MAX_ACC 1000        // Max Acceleration (steps / sec^2)
 
 // Link 4 parameters
-#define JOINT4_MAX 2.87979f    // Maximum joint angle in radians (165°)
-#define JOINT4_MIN -2.87979f   // Minimum joint angle in radians (-165°)
-#define JOINT4_SPR 501760l     // steps per rev
-#define JOINT4_MAX_VEL 125440  // Max Velcity (steps / sec)
-#define JOINT4_MAX_ACC 1000    // Max Acceleration (steps / sec^2)
+#define JOINT4_MAX_RAD 2.87979f    // Maximum joint angle in radians (165°)
+#define JOINT4_MIN_RAD -2.87979f   // Minimum joint angle in radians (-165°)
+#define JOINT4_SPR 501760l         // steps per rev
+#define JOINT4_MAX_STEPS 229973l   // Maximum step value (165°)
+#define JOINT4_MIN_STEPS -229973l  // Minimum step value (-165°)
+#define JOINT4_MAX_VEL 125440      // Max Velcity (steps / sec)
+#define JOINT4_MAX_ACC 1000        // Max Acceleration (steps / sec^2)
 
 // Link 5 parameters
-#define JOINT5_MAX 1.8326f     // Maximum joint angle in radians (105°)
-#define JOINT5_MIN -1.8326f    // Minimum joint angle in radians (-105°)
-#define JOINT5_SPR 603185l     // steps per rev
-#define JOINT5_MAX_VEL 150796  // Max Velcity (steps / sec)
-#define JOINT5_MAX_ACC 1000    // Max Acceleration (steps / sec^2)
+#define JOINT5_MAX_RAD 1.8326f     // Maximum joint angle in radians (105°)
+#define JOINT5_MIN_RAD -1.8326f    // Minimum joint angle in radians (-105°)
+#define JOINT5_SPR 603185l         // steps per rev
+#define JOINT5_MAX_STEPS 175929l   // Maximum step value (105°)
+#define JOINT5_MIN_STEPS -175929l  // Minimum step value (-105°)
+#define JOINT5_MAX_VEL 150796      // Max Velcity (steps / sec)
+#define JOINT5_MAX_ACC 1000        // Max Acceleration (steps / sec^2)
 
 // Link 6 parameters
-#define JOINT6_MAX 2.70526f    // Maximum joint angle in radians (155°)
-#define JOINT6_MIN -2.70526f   // Minimum joint angle in radians (-155°)
-#define JOINT6_SPR 486400l     // steps per rev
-#define JOINT6_MAX_VEL 121600  // Max Velcity (steps / sec)
-#define JOINT6_MAX_ACC 1000    // Max Acceleration (steps / sec^2)
+#define JOINT6_MAX_RAD 2.70526f    // Maximum joint angle in radians (155°)
+#define JOINT6_MIN_RAD -2.70526f   // Minimum joint angle in radians (-155°)
+#define JOINT6_SPR 486400l         // steps per rev
+#define JOINT6_MAX_STEPS 209422l   // Maximum step value (155°)
+#define JOINT6_MIN_STEPS -209422l  // Minimum step value (-15°)
+#define JOINT6_MAX_VEL 121600      // Max Velcity (steps / sec)
+#define JOINT6_MAX_ACC 1000        // Max Acceleration (steps / sec^2)
 
 // Wild Link 7 parameters
-#define W_JOINT7_MAX HALF_PI    // Maximum joint angle in radians (155°)
-#define W_JOINT7_MIN -HALF_PIf   // Minimum joint angle in radians (-155°)
-#define W_JOINT7_SPR 12800l     // steps per rev
-#define W_JOINT7_MAX_VEL 3750  // Max Velcity (steps / sec)
-#define W_JOINT7_MAX_ACC 1000    // Max Acceleration (steps / sec^2)
+#define W_JOINT7_MAX_RAD HALF_PI    // Maximum joint angle in radians (155°)
+#define W_JOINT7_MIN_RAD -HALF_PIf  // Minimum joint angle in radians (-155°)
+#define W_JOINT7_SPR 12800l         // steps per rev
+#define W_JOINT7_MAX_VEL 3750       // Max Velcity (steps / sec)
+#define W_JOINT7_MAX_ACC 1000       // Max Acceleration (steps / sec^2)
+
+// Precomputed bit masks for bits 0 to 27
+#define BIT0 0x01  // (1 << 0)
+#define BIT1 0x02  // (1 << 1)
+#define BIT2 0x04  // (1 << 2)
+#define BIT3 0x08  // (1 << 3)
+#define BIT4 0x10  // (1 << 4)
+#define BIT5 0x20  // (1 << 5)
+#define BIT6 0x40  // (1 << 6)
+#define BIT7 0x80  // (1 << 7)
 
 //
 enum Links {
@@ -91,7 +110,7 @@ enum Error_codes {
   COMMAND_FAILED,
   UNKNOWN_COMMAND,
   MMULT_FAILED,
-  MINV_FAILD, // inversion if the input matrix is singular and cannot be inverted
+  MINV_FAILD,  // inversion if the input matrix is singular and cannot be inverted
   SQURT_FAILED,
   TRIG_RANGE,
   iS_NAN,
@@ -104,15 +123,12 @@ enum Error_codes {
   UNKMOWN_KSATE_VALUE
 };
 
-// Precomputed bit masks for bits 0 to 27
-#define BIT0 0x01  // (1 << 0)
-#define BIT1 0x02  // (1 << 1)
-#define BIT2 0x04  // (1 << 2)
-#define BIT3 0x08  // (1 << 3)
-#define BIT4 0x10  // (1 << 4)
-#define BIT5 0x20  // (1 << 5)
-#define BIT6 0x40  // (1 << 6)
-#define BIT7 0x80  // (1 << 7)
+extern File dataFile;                   // Declare the external File object
+const int chipSelect = BUILTIN_SDCARD;  // where to stor the log file
+
+const long RETURN_HOME_DISTANCE[JOINT_NUM] = { JOINT1_MIN_STEPS, JOINT2_MIN_STEPS, JOINT3_MIN_STEPS, JOINT4_MIN_STEPS, JOINT5_MIN_STEPS, JOINT6_MIN_STEPS };
+const long MOTOR_MAX_SPEED[JOINT_NUM] = { JOINT1_MAX_VEL, JOINT2_MAX_VEL, JOINT3_MAX_VEL, JOINT4_MAX_VEL, JOINT5_MAX_VEL, JOINT6_MAX_VEL };
+const long MOTOR_ACCELERATION[JOINT_NUM] = { JOINT1_MAX_ACC, JOINT2_MAX_ACC, JOINT3_MAX_ACC, JOINT4_MAX_ACC, JOINT5_MAX_ACC, JOINT6_MAX_ACC };
 
 //======================================== Structure Definitions ====================================
 

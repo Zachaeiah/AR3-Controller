@@ -39,12 +39,14 @@
             "id": "5419e131f69a0eb6",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Dev notes/DM542T_V4.0.pdf"
+                "file": "Dev notes/Stepper motor Driver configuration setup.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "DM542T_V4.0"
+              "icon": "lucide-file",
+              "title": "Stepper motor Driver configuration setup"
             }
           }
         ],
@@ -121,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dev notes/DM542T_V4.0.pdf",
+                "file": "Dev notes/Stepper motor Driver configuration setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for DM542T_V4.0"
+              "title": "Backlinks for Stepper motor Driver configuration setup"
             }
           },
           {
@@ -196,12 +198,12 @@
   },
   "active": "5419e131f69a0eb6",
   "lastOpenFiles": [
-    "Dev notes/stepper motor Control profile.md",
     "Dev notes/DM542T_V4.0.pdf",
-    "C code/Shell Command Processing Documentation.md",
-    "C code/Kinematics Library Documentation.md",
-    "C code/Command Queue Documentation.md",
     "Dev notes/Stepper motor Driver configuration setup.md",
+    "Dev notes/stepper motor Control profile.md",
+    "C code/Kinematics Library Documentation.md",
+    "C code/Shell Command Processing Documentation.md",
+    "C code/Command Queue Documentation.md",
     "Pasted image 20250329103415.png",
     "Pasted image 20250329101942.png",
     "Pasted image 20250329101333.png",

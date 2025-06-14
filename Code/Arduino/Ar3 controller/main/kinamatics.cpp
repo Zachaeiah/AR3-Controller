@@ -3,7 +3,7 @@
 
 //======================================== Global Variable Definitions ==============================
 kinematics_state Home_pose = { 333.080f, 0.0f, 474.770f, -2.35619f, 1.57081f, -2.35619f, 0, 0, 0, 0, 0, 0 };
-kinematics_state END_STOP_pose = { -59.61273, -13.93499, 322.74166, -1.64245 - 1.09169, -1.97535, JOINT1_MAX, JOINT2_MIN, JOINT3_MAX, JOINT4_MIN, JOINT5_MIN, JOINT6_MIN };
+kinematics_state END_STOP_pose = { -59.61273, -13.93499, 322.74166, -1.64245 - 1.09169, -1.97535, JOINT1_MAX_RAD, JOINT2_MIN_RAD, JOINT3_MAX_RAD, JOINT4_MIN_RAD, JOINT5_MIN_RAD, JOINT6_MIN_RAD };
 
 
 float32_t ToolFrame[MATRIX_SIZE * MATRIX_SIZE] = { 0 };
