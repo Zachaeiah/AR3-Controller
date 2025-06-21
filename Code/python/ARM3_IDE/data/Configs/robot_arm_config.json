@@ -3,43 +3,131 @@
         "type": "robot_arm_config",
         "version": "1.0",
         "author": "Zach Loewen",
-        "description": "Configuration for 2-DOF test robot arm",
+        "description": "Configuration for 6-DOF test robot arm",
         "created": "2025-06-13T00:00:00"
     },
     "links": [
         {
-            "name": "shoulder_joint",
-            "id": "M1",
+            "name": "Bace Joint 1",
+            "id": "J1",
             "motor_params": {
-                "steps_per_rev": 200,
-                "deg_per_step": 1.8,
-                "min_angle": -90,
-                "max_angle": 90,
-                "max_velocity": 800,
-                "max_acceleration": 700
+                "steps_per_rev": 0,
+                "deg_per_step": 0,
+                "min_angle": -3.1415927,
+                "max_angle": 2.9670597,
+                "max_velocity": 0,
+                "max_acceleration": 0
             },
-            "link_params": {
-                "a": 0.1,
-                "alpha": 0.0,
-                "d": 0.2
+            "DenaHar_params": {
+                "Input_angle_offset": 0.000,
+                "a": 64.200,
+                "alpha": -1.57079633,
+                "d": 169.770
             }
         },
         {
-            "name": "elbow_joint",
-            "id": "M2",
+            "name": "Sholder Joint 2",
+            "id": "J2",
             "motor_params": {
-                "steps_per_rev": 400,
-                "deg_per_step": 0.9,
-                "min_angle": -180,
-                "max_angle": 180,
-                "max_velocity": 150,
-                "max_acceleration": 650
+                "steps_per_rev": 0,
+                "deg_per_step": 0,
+                "min_angle": -0.7330383,
+                "max_angle": 1.5707963,
+                "max_velocity": 0,
+                "max_acceleration": 0
             },
-            "link_params": {
-                "a": 0.2,
-                "alpha": -1.57,
-                "d": 0.25
+            "DenaHar_params": {
+                "Input_angle_offset": -1.57079633,
+                "a": 305.000,
+                "alpha": 0.0,
+                "d": 0.0
             }
+        },
+        {
+            "name": "Elbow Joint 3",
+            "id": "J3",
+            "motor_params": {
+                "steps_per_rev": 0,
+                "deg_per_step": 0,
+                "min_angle": -1.5533430,
+                "max_angle": 0.9075712,
+                "max_velocity": 0,
+                "max_acceleration": 0
+            },
+            "DenaHar_params": {
+                "Input_angle_offset": 3.1415927,
+                "a": 0.0,
+                "alpha": 1.57079633,
+                "d": 0.0
+            }
+        },
+        {
+            "name": "Elbow Revolute Joint 4",
+            "id": "J4",
+            "motor_params": {
+                "steps_per_rev": 0,
+                "deg_per_step": 0,
+                "min_angle": -2.8797933,
+                "max_angle": 2.8797933,
+                "max_velocity": 0,
+                "max_acceleration": 0
+            },
+            "DenaHar_params": {
+                "Input_angle_offset": 0.000,
+                "a": 0.0,
+                "alpha": -1.57079633,
+                "d": 222.630
+            }
+        },
+        {
+            "name": "Wrist Joint 5",
+            "id": "J5",
+            "motor_params": {
+                "steps_per_rev": 0,
+                "deg_per_step": 0,
+                "min_angle": -1.8325957,
+                "max_angle": 1.8325957,
+                "max_velocity": 0,
+                "max_acceleration": 0
+            },
+            "DenaHar_params": {
+                "Input_angle_offset": 0.000,
+                "a": 0.0,
+                "alpha": 1.57079633,
+                "d": 0.0
+            }
+        },
+        {
+            "name": "Wrist Revolute Joint 6",
+            "id": "M6",
+            "motor_params": {
+                "steps_per_rev": 0,
+                "deg_per_step": 0,
+                "min_angle": -2.7052603,
+                "max_angle": 2.7052603,
+                "max_velocity": 0,
+                "max_acceleration": 0
+            },
+            "DenaHar_params": {
+                "Input_angle_offset": 0.000,
+                "a": 0.0,
+                "alpha": 0.0,
+                "d": 41.0
+            }
+        },
+        {
+            "name": "Tool link",
+            "id": "T1",
+            "motor_params": {
+                "steps_per_rev": 0,
+                "deg_per_step": 0,
+                "min_angle": -6.1086524,
+                "max_angle": 6.1086524,
+                "max_velocity": 100,
+                "max_acceleration": 200
+            },
+            "position": [10.0, 10.0, 10.0],
+            "orientation": [0.0, 0.0, 0.0, 1.0]
         }
     ]
 }

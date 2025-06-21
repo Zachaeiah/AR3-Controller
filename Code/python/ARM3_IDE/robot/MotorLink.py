@@ -7,7 +7,7 @@ class MotorLink:
         name: str,
         id: Union[str, int],
         motor_params: Optional[Dict[str, Any]] = None,
-        link_params: Optional[Dict[str, Any]] = None,
+        DenaHar_params: Optional[Dict[str, Any]] = None,
     ):
         """
         Initialize a MotorLink instance representing a robot arm joint.
@@ -18,12 +18,12 @@ class MotorLink:
             motor_params (dict, optional): Dictionary containing motor-related parameters
                 such as steps per revolution, velocity limits, acceleration limits, etc.
                 Defaults to empty dict if not provided.
-            link_params (dict, optional): Dictionary containing link-related parameters,
-                typically the Denavit-Hartenberg parameters like 'a', 'alpha', 'd'.
+            DenaHar_params (dict, optional): Dictionary containing link-related parameters,
+                typically the Denavit-Hartenberg parameters like 'a', 'alpha', 'd' and 'Input_angle_offset'
                 Defaults to empty dict if not provided.
 
         Raises:
-            TypeError: If `motor_params` or `link_params` are provided but are not dicts.
+            TypeError: If `motor_params` or `DenaHar_params` are provided but are not dicts.
             TypeError: If `name` is not a string or `id` is not str or int.
         """
         if not isinstance(name, str):
@@ -33,14 +33,14 @@ class MotorLink:
 
         if motor_params is not None and not isinstance(motor_params, dict):
             raise TypeError("motor_params must be a dict if provided")
-        if link_params is not None and not isinstance(link_params, dict):
-            raise TypeError("link_params must be a dict if provided")
+        if DenaHar_params is not None and not isinstance(DenaHar_params, dict):
+            raise TypeError("DenaHar_params must be a dict if provided")
 
         # Use deepcopy to avoid shared mutable default issues
         self.name: str = name
         self.id: Union[str, int] = id
         self.motor_params: Dict[str, Any] = copy.deepcopy(motor_params) if motor_params else {}
-        self.link_params: Dict[str, Any] = copy.deepcopy(link_params) if link_params else {}
+        self.DenaHar_params: Dict[str, Any] = copy.deepcopy(DenaHar_params) if DenaHar_params else {}
 
     def to_dict(self) -> Dict[str, Any]:
         """
@@ -54,7 +54,7 @@ class MotorLink:
             "name": self.name,
             "id": self.id,
             "motor_params": copy.deepcopy(self.motor_params),
-            "link_params": copy.deepcopy(self.link_params),
+            "DenaHar_params": copy.deepcopy(self.DenaHar_params),
         }
 
     @classmethod
@@ -76,18 +76,18 @@ class MotorLink:
         if not isinstance(data, dict):
             raise TypeError("Input data must be a dictionary")
 
-        name = data["name"]  # KeyError if missing, which is reasonable
-        id_ = data["id"]
+        name: str = data["name"]  # KeyError if missing, which is reasonable
+        id_: int = data["id"]
 
-        motor_params = data.get("motor_params", {})
-        link_params = data.get("link_params", {})
+        motor_params: dict = data.get("motor_params", {})
+        DenaHar_params: dict = data.get("DenaHar_params", {})
 
-        return cls(name=name, id=id_, motor_params=motor_params, link_params=link_params)
+        return cls(name=name, id=id_, motor_params=motor_params, DenaHar_params=DenaHar_params)
 
     def update(
         self,
         motor_params: Optional[Dict[str, Any]] = None,
-        link_params: Optional[Dict[str, Any]] = None,
+        DenaHar_params: Optional[Dict[str, Any]] = None,
     ) -> None:
         """
         Update the motor and/or link parameters of this MotorLink.
@@ -95,7 +95,7 @@ class MotorLink:
 
         Args:
             motor_params (dict, optional): Motor parameters to update (e.g. {"max_velocity": 150}).
-            link_params (dict, optional): Link parameters to update (e.g. {"d": 0.25}).
+            DenaHar_params (dict, optional): Link parameters to update (e.g. {"d": 0.25}).
 
         Raises:
             TypeError: If provided parameters are not dictionaries.
@@ -105,10 +105,10 @@ class MotorLink:
                 raise TypeError("motor_params must be a dict")
             self.motor_params.update(motor_params)
 
-        if link_params is not None:
-            if not isinstance(link_params, dict):
-                raise TypeError("link_params must be a dict")
-            self.link_params.update(link_params)
+        if DenaHar_params is not None:
+            if not isinstance(DenaHar_params, dict):
+                raise TypeError("DenaHar_params must be a dict")
+            self.DenaHar_params.update(DenaHar_params)
 
     def __repr__(self) -> str:
         return (
@@ -118,8 +118,8 @@ class MotorLink:
             f"  motor_params={{\n"
             + "".join(f"    {k}: {v},\n" for k, v in self.motor_params.items()) +
             f"  }},\n"
-            f"  link_params={{\n"
-            + "".join(f"    {k}: {v},\n" for k, v in self.link_params.items()) +
+            f"  DenaHar_params={{\n"
+            + "".join(f"    {k}: {v},\n" for k, v in self.DenaHar_params.items()) +
             f"  }}\n"
             f")"
         )

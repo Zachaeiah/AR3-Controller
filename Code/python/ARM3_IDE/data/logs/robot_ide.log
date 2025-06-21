@@ -1,18 +1,263 @@
-2025-06-13 21:47:46,466 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
-2025-06-13 21:47:46,466 - PIL.PngImagePlugin - DEBUG - STREAM b'pHYs' 41 9
-2025-06-13 21:47:46,466 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 62 149
-2025-06-13 21:47:46,466 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
-2025-06-13 21:47:46,467 - PIL.PngImagePlugin - DEBUG - STREAM b'pHYs' 41 9
-2025-06-13 21:47:46,467 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 62 239
-2025-06-13 21:48:10,887 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
-2025-06-13 21:48:10,887 - PIL.PngImagePlugin - DEBUG - STREAM b'pHYs' 41 9
-2025-06-13 21:48:10,887 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 62 149
-2025-06-13 21:48:10,887 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
-2025-06-13 21:48:10,887 - PIL.PngImagePlugin - DEBUG - STREAM b'pHYs' 41 9
-2025-06-13 21:48:10,887 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 62 239
-2025-06-13 21:49:09,991 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
-2025-06-13 21:49:09,991 - PIL.PngImagePlugin - DEBUG - STREAM b'pHYs' 41 9
-2025-06-13 21:49:09,991 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 62 149
-2025-06-13 21:49:09,991 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
-2025-06-13 21:49:09,991 - PIL.PngImagePlugin - DEBUG - STREAM b'pHYs' 41 9
-2025-06-13 21:49:09,992 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 62 239
+2025-06-18 10:15:11,656 - __main__ - INFO - Logging level: 10
+2025-06-18 10:15:11,657 - __main__ - INFO - Robot connect State: False
+2025-06-18 10:15:11,685 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-18 10:15:11,775 - __main__ - DEBUG - Switching to Home
+2025-06-18 10:15:21,665 - __main__ - DEBUG - Switching to ProgramEditorPage
+2025-06-18 10:15:27,966 - __main__ - DEBUG - Switching to Simulation
+2025-06-18 10:15:38,554 - __main__ - DEBUG - Switching to Console
+2025-06-18 10:15:41,485 - __main__ - DEBUG - Switching to Connection
+2025-06-18 10:15:42,167 - __main__ - DEBUG - Switching to Project Manager
+2025-06-18 10:15:42,998 - __main__ - DEBUG - Switching to Diagnostics
+2025-06-18 10:15:43,769 - __main__ - DEBUG - Switching to Settings
+2025-06-18 10:16:03,446 - __main__ - DEBUG - Switching to ProgramEditorPage
+2025-06-18 11:04:43,873 - __main__ - INFO - Logging level: 10
+2025-06-18 11:04:43,873 - __main__ - INFO - Robot connect State: False
+2025-06-18 11:04:43,992 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-18 11:04:45,549 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-18 11:04:45,549 - matplotlib.pyplot - DEBUG - Loaded backend TkAgg version unknown.
+2025-06-18 11:04:45,568 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-18 11:38:07,629 - __main__ - INFO - Logging level: 10
+2025-06-18 11:38:07,640 - __main__ - INFO - Robot connect State: False
+2025-06-18 11:38:07,709 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-18 11:38:07,863 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-18 11:38:07,864 - matplotlib.pyplot - DEBUG - Loaded backend TkAgg version unknown.
+2025-06-18 11:38:07,889 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-18 11:39:31,502 - __main__ - INFO - Logging level: 10
+2025-06-18 11:39:31,503 - __main__ - INFO - Robot connect State: False
+2025-06-18 11:39:31,552 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-18 11:39:31,674 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-18 11:39:31,675 - matplotlib.pyplot - DEBUG - Loaded backend TkAgg version unknown.
+2025-06-18 11:39:31,696 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-18 11:40:08,421 - __main__ - INFO - Logging level: 10
+2025-06-18 11:40:08,422 - __main__ - INFO - Robot connect State: False
+2025-06-18 11:40:08,467 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-18 11:40:08,589 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-18 11:40:08,590 - matplotlib.pyplot - DEBUG - Loaded backend TkAgg version unknown.
+2025-06-18 11:40:08,611 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-18 13:49:03,539 - __main__ - INFO - Logging level: 10
+2025-06-18 13:49:03,541 - __main__ - INFO - Robot connect State: False
+2025-06-18 13:49:03,588 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-18 13:49:03,730 - __main__ - DEBUG - Switching to Home
+2025-06-18 13:49:08,808 - __main__ - DEBUG - Switching to Console
+2025-06-18 14:05:25,003 - __main__ - INFO - Logging level: 10
+2025-06-18 14:05:25,004 - __main__ - INFO - Robot connect State: False
+2025-06-18 14:05:25,036 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-18 14:05:25,144 - __main__ - DEBUG - Switching to Home
+2025-06-18 14:06:01,220 - __main__ - DEBUG - Switching to ProgramEditorPage
+2025-06-18 14:06:03,958 - __main__ - DEBUG - Switching to Home
+2025-06-18 14:07:02,267 - __main__ - INFO - Logging level: 10
+2025-06-18 14:07:02,268 - __main__ - INFO - Robot connect State: False
+2025-06-18 14:07:02,296 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-18 14:07:02,400 - __main__ - DEBUG - Switching to Home
+2025-06-18 14:07:38,550 - __main__ - INFO - Logging level: 10
+2025-06-18 14:07:38,550 - __main__ - INFO - Robot connect State: False
+2025-06-18 14:07:38,590 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-18 14:07:38,712 - __main__ - DEBUG - Switching to Home
+2025-06-18 14:07:52,816 - __main__ - DEBUG - Switching to ProgramEditorPage
+2025-06-18 14:07:54,157 - __main__ - DEBUG - Switching to Simulation
+2025-06-18 14:07:55,748 - __main__ - DEBUG - Switching to Console
+2025-06-18 14:08:07,332 - __main__ - DEBUG - Switching to Connection
+2025-06-18 14:08:07,831 - __main__ - DEBUG - Switching to Project Manager
+2025-06-18 14:08:08,311 - __main__ - DEBUG - Switching to Diagnostics
+2025-06-18 14:08:08,849 - __main__ - DEBUG - Switching to Settings
+2025-06-18 14:08:16,684 - __main__ - DEBUG - Connect button clicked
+2025-06-18 14:08:17,358 - __main__ - DEBUG - Connect button clicked
+2025-06-18 15:18:31,632 - __main__ - INFO - Logging level: 10
+2025-06-18 15:18:31,632 - __main__ - INFO - Robot connect State: False
+2025-06-18 15:18:31,676 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-18 15:18:31,803 - __main__ - DEBUG - Switching to Home
+2025-06-18 15:18:37,167 - __main__ - DEBUG - Switching to Settings
+2025-06-18 15:28:54,038 - __main__ - INFO - Logging level: 10
+2025-06-18 15:28:54,038 - __main__ - INFO - Robot connect State: False
+2025-06-18 15:28:54,069 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-18 15:28:54,156 - __main__ - DEBUG - Switching to Home
+2025-06-18 15:28:55,520 - __main__ - DEBUG - Switching to Settings
+2025-06-18 15:33:33,340 - __main__ - INFO - Logging level: 10
+2025-06-18 15:33:33,340 - __main__ - INFO - Robot connect State: False
+2025-06-18 15:33:33,379 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-18 15:33:33,503 - __main__ - DEBUG - Switching to Home
+2025-06-18 15:33:34,772 - __main__ - DEBUG - Switching to Settings
+2025-06-19 08:33:52,106 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:33:52,106 - __main__ - INFO - Logging level: 10
+2025-06-19 08:33:52,106 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:33:52,118 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 08:33:52,172 - __main__ - INFO - Icon assets loaded
+2025-06-19 08:33:52,192 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 08:33:52,193 - __main__ - WARNING - Failed to add item to tree: Configs — image specification must contain an odd number of elements
+2025-06-19 08:33:52,194 - __main__ - DEBUG - Item insert exception stack trace:
+Traceback (most recent call last):
+  File "c:\Users\zachl\ARM3 _IDE\main.py", line 287, in populate_tree
+    node_id: str = self.tree.insert(parent, 'end', text=item, image=icon, open=False)
+  File "C:\Program Files\Python39\lib\tkinter\ttk.py", line 1364, in insert
+    res = self.tk.call(self._w, "insert", parent, index, *opts)
+_tkinter.TclError: image specification must contain an odd number of elements
+2025-06-19 08:33:52,197 - __main__ - WARNING - Failed to add item to tree: logs — image specification must contain an odd number of elements
+2025-06-19 08:33:52,197 - __main__ - DEBUG - Item insert exception stack trace:
+Traceback (most recent call last):
+  File "c:\Users\zachl\ARM3 _IDE\main.py", line 287, in populate_tree
+    node_id: str = self.tree.insert(parent, 'end', text=item, image=icon, open=False)
+  File "C:\Program Files\Python39\lib\tkinter\ttk.py", line 1364, in insert
+    res = self.tk.call(self._w, "insert", parent, index, *opts)
+_tkinter.TclError: image specification must contain an odd number of elements
+2025-06-19 08:33:52,522 - __main__ - DEBUG - Switching to Home
+2025-06-19 08:36:51,128 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:36:51,128 - __main__ - INFO - Logging level: 10
+2025-06-19 08:36:51,128 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:36:51,129 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 08:36:51,228 - __main__ - INFO - Icon assets loaded
+2025-06-19 08:36:51,242 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 08:36:51,445 - __main__ - DEBUG - Switching to Home
+2025-06-19 08:37:28,163 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 08:39:13,576 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:39:13,576 - __main__ - INFO - Logging level: 10
+2025-06-19 08:39:13,576 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:39:13,577 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 08:39:13,592 - __main__ - INFO - Icon assets loaded
+2025-06-19 08:39:13,599 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 08:39:13,613 - __main__ - ERROR - Failed to create page SimulationPage: bad option "-fill": must be -column, -columnspan, -in, -ipadx, -ipady, -padx, -pady, -row, -rowspan, or -sticky
+Traceback (most recent call last):
+  File "c:\Users\zachl\ARM3 _IDE\main.py", line 129, in create_pages
+    page: PageBase = PageClass(self.container, self, logger=self.logger)
+  File "c:\Users\zachl\ARM3 _IDE\GUI_pages\SimulationPage.py", line 54, in __init__
+    self._build_plot_frame()
+  File "c:\Users\zachl\ARM3 _IDE\GUI_pages\SimulationPage.py", line 65, in _build_plot_frame
+    self.plot_frame.grid(row=0, column=0, sticky="nsew", fill="both", padx=5, pady=5)
+  File "C:\Program Files\Python39\lib\tkinter\__init__.py", line 2493, in grid_configure
+    self.tk.call(
+_tkinter.TclError: bad option "-fill": must be -column, -columnspan, -in, -ipadx, -ipady, -padx, -pady, -row, -rowspan, or -sticky
+2025-06-19 08:39:13,651 - __main__ - ERROR - Exception in App.switch_page: <class 'GUI_pages.SimulationPage.SimulationPage'>
+Traceback (most recent call last):
+  File "c:\Users\zachl\ARM3 _IDE\utils\logging_helpers.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\zachl\ARM3 _IDE\main.py", line 243, in switch_page
+    frame: PageBase = self.frames[page_class]
+KeyError: <class 'GUI_pages.SimulationPage.SimulationPage'>
+2025-06-19 08:39:18,495 - __main__ - ERROR - Exception in App.switch_page: <class 'GUI_pages.SimulationPage.SimulationPage'>
+Traceback (most recent call last):
+  File "c:\Users\zachl\ARM3 _IDE\utils\logging_helpers.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\zachl\ARM3 _IDE\main.py", line 243, in switch_page
+    frame: PageBase = self.frames[page_class]
+KeyError: <class 'GUI_pages.SimulationPage.SimulationPage'>
+2025-06-19 08:39:19,127 - __main__ - ERROR - Exception in App.switch_page: <class 'GUI_pages.SimulationPage.SimulationPage'>
+Traceback (most recent call last):
+  File "c:\Users\zachl\ARM3 _IDE\utils\logging_helpers.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\zachl\ARM3 _IDE\main.py", line 243, in switch_page
+    frame: PageBase = self.frames[page_class]
+KeyError: <class 'GUI_pages.SimulationPage.SimulationPage'>
+2025-06-19 08:40:01,752 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:40:01,753 - __main__ - INFO - Logging level: 10
+2025-06-19 08:40:01,753 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:40:01,753 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 08:40:01,777 - __main__ - INFO - Icon assets loaded
+2025-06-19 08:40:01,789 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 08:40:01,890 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 08:41:22,380 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:41:22,380 - __main__ - INFO - Logging level: 10
+2025-06-19 08:41:22,380 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:41:22,381 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 08:41:22,405 - __main__ - INFO - Icon assets loaded
+2025-06-19 08:41:22,415 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 08:41:22,531 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 08:45:30,308 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:45:30,308 - __main__ - INFO - Logging level: 10
+2025-06-19 08:45:30,308 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:45:30,309 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 08:45:30,326 - __main__ - INFO - Icon assets loaded
+2025-06-19 08:45:30,336 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 08:45:30,448 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 08:45:59,997 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:45:59,997 - __main__ - INFO - Logging level: 10
+2025-06-19 08:45:59,998 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:45:59,999 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 08:46:00,035 - __main__ - INFO - Icon assets loaded
+2025-06-19 08:46:00,049 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 08:46:00,178 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 08:48:55,980 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:48:55,981 - __main__ - INFO - Logging level: 10
+2025-06-19 08:48:55,981 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:48:55,982 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 08:48:56,006 - __main__ - INFO - Icon assets loaded
+2025-06-19 08:48:56,017 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 08:48:56,176 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 08:49:16,064 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:49:16,064 - __main__ - INFO - Logging level: 10
+2025-06-19 08:49:16,064 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:49:16,065 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 08:49:16,089 - __main__ - INFO - Icon assets loaded
+2025-06-19 08:49:16,104 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 08:49:16,284 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 08:49:26,896 - __main__ - DEBUG - Switching to Settings
+2025-06-19 08:49:30,349 - __main__ - INFO - Debug mode set to False
+2025-06-19 08:49:30,349 - __main__ - INFO - Debug checkbox toggled: False
+2025-06-19 08:51:28,217 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:51:28,217 - __main__ - INFO - Logging level: 10
+2025-06-19 08:51:28,217 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:51:28,218 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 08:51:28,249 - __main__ - INFO - Icon assets loaded
+2025-06-19 08:51:28,262 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 08:51:28,389 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 08:51:53,202 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:51:53,203 - __main__ - INFO - Logging level: 10
+2025-06-19 08:51:53,203 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:51:53,203 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 08:51:53,224 - __main__ - INFO - Icon assets loaded
+2025-06-19 08:51:53,234 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 08:51:53,409 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 08:53:15,424 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:53:15,424 - __main__ - INFO - Logging level: 10
+2025-06-19 08:53:15,424 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:53:15,425 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 08:53:15,447 - __main__ - INFO - Icon assets loaded
+2025-06-19 08:53:15,460 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 08:53:15,592 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 08:53:34,199 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:53:34,200 - __main__ - INFO - Logging level: 10
+2025-06-19 08:53:34,200 - __main__ - INFO - Robot connect State: False
+2025-06-19 08:53:34,200 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 08:53:34,225 - __main__ - INFO - Icon assets loaded
+2025-06-19 08:53:34,239 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 08:53:34,364 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 11:16:29,191 - __main__ - INFO - Robot connect State: False
+2025-06-19 11:16:29,191 - __main__ - INFO - Logging level: 10
+2025-06-19 11:16:29,192 - __main__ - INFO - Robot connect State: False
+2025-06-19 11:16:29,210 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 11:16:29,394 - __main__ - INFO - Icon assets loaded
+2025-06-19 11:16:29,409 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 11:16:29,596 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 11:16:42,438 - __main__ - DEBUG - Switching to Home
+2025-06-19 11:16:43,901 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 11:17:57,042 - __main__ - DEBUG - Switching to Console
+2025-06-19 11:18:12,515 - __main__ - DEBUG - Switching to Connection
+2025-06-19 11:18:13,274 - __main__ - DEBUG - Switching to Diagnostics
+2025-06-19 11:18:14,447 - __main__ - DEBUG - Switching to Settings
+2025-06-19 13:48:10,729 - __main__ - INFO - Robot connect State: False
+2025-06-19 13:48:10,730 - __main__ - INFO - Logging level: 10
+2025-06-19 13:48:10,730 - __main__ - INFO - Robot connect State: False
+2025-06-19 13:48:10,731 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 13:48:10,815 - __main__ - INFO - Icon assets loaded
+2025-06-19 13:48:10,837 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 13:48:11,030 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 13:48:33,664 - __main__ - DEBUG - Switching to Console
+2025-06-19 13:48:35,096 - __main__ - DEBUG - Switching to Connection
+2025-06-19 13:48:35,729 - __main__ - DEBUG - Switching to Console
+2025-06-19 13:48:46,671 - __main__ - DEBUG - Switching to Diagnostics
+2025-06-19 13:48:47,241 - __main__ - DEBUG - Switching to Settings
+2025-06-19 13:48:51,615 - __main__ - DEBUG - Switching to Home
+2025-06-19 13:48:51,974 - __main__ - DEBUG - Switching to ProgramEditorPage
+2025-06-19 13:48:52,335 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 13:52:56,954 - __main__ - INFO - Robot connect State: False
+2025-06-19 13:52:56,954 - __main__ - INFO - Logging level: 10
+2025-06-19 13:52:56,955 - __main__ - INFO - Robot connect State: False
+2025-06-19 13:52:56,958 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 13:52:56,996 - __main__ - INFO - Icon assets loaded
+2025-06-19 13:52:57,007 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 13:52:57,245 - __main__ - DEBUG - Switching to Simulation
+2025-06-19 13:53:33,966 - __main__ - INFO - Robot connect State: False
+2025-06-19 13:53:33,967 - __main__ - INFO - Logging level: 10
+2025-06-19 13:53:33,967 - __main__ - INFO - Robot connect State: False
+2025-06-19 13:53:33,969 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-19 13:53:34,000 - __main__ - INFO - Icon assets loaded
+2025-06-19 13:53:34,009 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-19 13:53:34,177 - __main__ - DEBUG - Switching to Simulation

@@ -3,6 +3,7 @@ import os
 from typing import List, Optional, Union
 from pathlib import Path
 from robot.MotorLink import MotorLink
+from robot.ToolLink import ToolLink
 from datetime import datetime
 
 
@@ -22,21 +23,21 @@ class RobotArmConfig:
         """
         Initialize an empty robot arm configuration.
         """
-        self.links: List[MotorLink] = []
+        self.links: List[Union[MotorLink, ToolLink]] = []
 
-    def add_link(self, motor_link: MotorLink) -> None:
+    def add_link(self, link: Union[MotorLink, ToolLink]) -> None:
         """
-        Add a MotorLink object to the configuration.
+        Add a MotorLink or ToolLink object to the configuration.
 
         Args:
-            motor_link (MotorLink): The MotorLink instance representing a motor/link.
+            link (MotorLink | ToolLink): The link instance to add.
 
         Raises:
-            TypeError: If the argument is not a MotorLink instance.
+            TypeError: If the argument is not a MotorLink or ToolLink instance.
         """
-        if not isinstance(motor_link, MotorLink):
-            raise TypeError("Expected a MotorLink instance")
-        self.links.append(motor_link)
+        if not isinstance(link, (MotorLink, ToolLink)):
+            raise TypeError("Expected a MotorLink or ToolLink instance")
+        self.links.append(link)
 
     def to_json(self, filename: Union[str, Path]) -> None:
         """
@@ -45,8 +46,8 @@ class RobotArmConfig:
         Args:
             filename (str or Path): File path where the configuration will be saved.
         """
-        path = os.fspath(filename)
-        data = {
+        path: str = os.fspath(filename)
+        data: dict[str, any] = {
             "metadata": self.metadata,
             "links": [link.to_dict() for link in self.links]
         }
@@ -68,37 +69,43 @@ class RobotArmConfig:
             FileNotFoundError: If the file does not exist.
             json.JSONDecodeError: If the file content is not valid JSON.
         """
-        path = os.fspath(filename)
+        path: str = os.fspath(filename)
         with open(path, 'r') as f:
             data = json.load(f)
 
         if not isinstance(data, dict):
             raise ValueError("Expected a dictionary with 'metadata' and 'links'")
 
-        metadata = data.get("metadata")
+        metadata: dict = data.get("metadata")
         if not isinstance(metadata, dict) or metadata.get("type") != "robot_arm_config":
             raise ValueError("Missing or incorrect metadata for robot arm configuration")
 
-        links_data = data.get("links")
+        links_data: list = data.get("links")
         if not isinstance(links_data, list):
-            raise ValueError("'links' should be a list of motor link data")
+            raise ValueError("'links' should be a list of motor/tool link data")
 
         arm = cls()
-        arm.metadata = metadata  # Overwrite default metadata
+        arm.metadata = metadata
+
         for link_data in links_data:
-            arm.add_link(MotorLink.from_dict(link_data))
+            if "DenaHar_params" in link_data:
+                arm.add_link(MotorLink.from_dict(link_data))
+            elif "position" in link_data and "orientation" in link_data:
+                arm.add_link(ToolLink.from_dict(link_data))
+            else:
+                raise ValueError("Invalid link entry: missing DenaHar_params or tool pose")
 
         return arm
 
-    def find_link(self, key: Union[str, int]) -> Optional[MotorLink]:
+    def find_link(self, key: Union[str, int]) -> Optional[Union[MotorLink, ToolLink]]:
         """
-        Find a MotorLink by name or ID.
+        Find a MotorLink or ToolLink by name or ID.
 
         Args:
-            key (str or int): The name or ID of the MotorLink.
+            key (str or int): The name or ID of the link.
 
         Returns:
-            Optional[MotorLink]: The matching MotorLink, or None if not found.
+            Optional[MotorLink | ToolLink]: The matching link, or None if not found.
         """
         for link in self.links:
             if link.name == key or str(link.id) == str(key):
@@ -109,18 +116,19 @@ class RobotArmConfig:
         self,
         key: Union[str, int],
         motor_params: Optional[dict] = None,
-        link_params: Optional[dict] = None
+        params: Optional[dict] = None
     ) -> None:
         """
-        Update a MotorLink's parameters by name or ID.
+        Update a MotorLink or ToolLink's parameters by name or ID.
 
         Args:
-            key (str or int): The name or ID of the MotorLink to update.
+            key (str or int): The name or ID of the link to update.
             motor_params (dict, optional): Motor parameter updates.
-            link_params (dict, optional): Link parameter updates.
+            params (dict, optional): For MotorLink, this is DH parameters.
+                                             For ToolLink, it must contain "position" and/or "orientation".
 
         Raises:
-            ValueError: If the MotorLink is not found.
+            ValueError: If the link is not found.
             TypeError: If the updates are not in dictionary format.
         """
         link = self.find_link(key)
@@ -129,10 +137,18 @@ class RobotArmConfig:
 
         if motor_params is not None and not isinstance(motor_params, dict):
             raise TypeError("motor_params must be a dictionary")
-        if link_params is not None and not isinstance(link_params, dict):
-            raise TypeError("link_params must be a dictionary")
+        if params is not None and not isinstance(params, dict):
+            raise TypeError("DenaHar_params must be a dictionary")
 
-        link.update(motor_params, link_params)
+        if isinstance(link, MotorLink):
+            link.update(motor_params, params)
+        elif isinstance(link, ToolLink):
+            pose = {}
+            if "position" in params:
+                pose["position"] = params["position"]
+            if "orientation" in params:
+                pose["orientation"] = params["orientation"]
+            link.update(motor_params, pose)
 
     def __repr__(self) -> str:
         return f"RobotArmConfig(links={self.links!r})"

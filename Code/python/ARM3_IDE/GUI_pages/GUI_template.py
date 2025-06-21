@@ -1,8 +1,10 @@
 # GUI_pages/GUI_template.py
 import tkinter as tk
 from tkinter import ttk
+from typing import Optional
 import logging
-import logging.config
+from utils import Tooltip
+
 from .styles import LARGE_FONT
 from .styles import SMALL_FONT
 
@@ -11,16 +13,20 @@ class PageBase(tk.Frame):
     Base class for all GUI pages in the robot IDE.
     Provides a consistent layout and interface for subpages to extend.
     """
+    SEL_BTN_TT_MSGS =   """"""
+    TOOLTIPS: dict = {}
 
-    def __init__(self, parent: tk.Widget, controller, title: str = "", subtitle: str = None, logger=None):
+
+    def __init__(self, parent: tk.Widget, controller, title: str = "", subtitle: str = None, logger: Optional[logging.Logger] = None):
         """
         Initialize the page.
 
         Args:
-            parent (tk.Widget): Parent container, typically the main window.
-            controller (tk.Tk or App): Reference to main app controller for navigation.
+            parent (Widget): The parent container, typically a frame from the main app.
+            controller (App): The main application controller used for accessing shared resources.
             title (str): Optional page title.
             subtitle (str): Optional subtitle.
+            logger (Optional[logging.Logger]): Logger instance for logging debug/info/errors.
         """
         super().__init__(parent)
         self.controller = controller
@@ -43,9 +49,14 @@ class PageBase(tk.Frame):
         self.content_frame = ttk.Frame(self)
         self.content_frame.grid(row=1, column=0, sticky="nsew", padx=10, pady=10)
 
-        # Optional: footer or status bar support could go here
+    def apply_tooltips(self) -> None:
+        """
+        will apply Tool tips for all  tk.Widget in TOOLTIPS dict
+        """
+        for key, value in self.TOOLTIPS.items():
+            Tooltip(key, value)
 
-    def on_show(self):
+    def on_show(self) -> None:
         """
         Hook method: called when the page becomes visible.
         Override this in subclasses to refresh data or update state.
