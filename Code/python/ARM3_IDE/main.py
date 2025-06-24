@@ -31,20 +31,27 @@ class App(tk.Tk):
         """_summary_
         """
         super().__init__(*args, **kwargs)
+        ttk.Style().theme_use('clam')
     
 
         self.logger: logging.Logger = logging.getLogger(__name__)
         self.debug_state: bool = True
-        self.icons: dict[str, Image.Image] = {}
+        self.logger.setLevel(logging.DEBUG if self.debug_state else logging.INFO)
+        self.logger.info(f"Logging level: {self.logger.level}")
+
         self.Robot_connect_state: bool = False
-        self.frames: dict[PageBase, PageBase] = {}
-        self.nav_buttons: dict[PageBase, tk.Button] = {}
         self.logger.info(f"Robot connect State: {self.Robot_connect_state}")
 
-        self.set_logging_level()
-        self.load_config()
-        self.init_window()
+        self.arm_config: RobotArmConfig = RobotArmConfig.from_json(self.config_path)
+        self.logger.info(f"Loading robot configuration: {self.config_path}")
 
+        self.Kinematics = RobotKinematics(self.arm_config)
+
+        self.icons: dict[str, Image.Image] = {}
+        self.frames: dict[PageBase, PageBase] = {}
+        self.nav_buttons: dict[PageBase, tk.Button] = {}
+
+        self.init_window()
         self.load_icon_assets()
         self.setup_layout()
         self.populate_tree(self.base_data_path)
@@ -56,17 +63,6 @@ class App(tk.Tk):
         self.switch_page(SimulationPage)
 
         self.apply_tooltips()
-
-    @log_exceptions_debug()
-    def set_logging_level(self):
-        self.logger.setLevel(logging.DEBUG if self.debug_state else logging.INFO)
-        self.logger.info(f"Logging level: {self.logger.level}")
-        self.logger.info(f"Robot connect State: {self.Robot_connect_state}")
-
-    @log_exceptions()
-    def load_config(self):
-        self.arm_config: RobotArmConfig = RobotArmConfig.from_json(self.config_path)
-        self.logger.info(f"Loading robot configuration: {self.config_path}")
 
     @log_exceptions_debug()
     def init_window(self):
@@ -432,37 +428,37 @@ def jsondemo():
 
 if __name__ == "__main__":
 
-    # LOG_FILE_PATH = os.path.join("data", "logs", "Robot_IDE_long.log")
-    # os.makedirs(os.path.dirname(LOG_FILE_PATH), exist_ok=True)
-    # logging.config.fileConfig('data/Configs/logger_config.conf')
+    LOG_FILE_PATH = os.path.join("data", "logs", "Robot_IDE_long.log")
+    os.makedirs(os.path.dirname(LOG_FILE_PATH), exist_ok=True)
+    logging.config.fileConfig('data/Configs/logger_config.conf')
 
     config_path = "data/Configs/robot_arm_config.json"
     arm_config = RobotArmConfig.from_json(config_path)
 
+    #init pose
+    # angles = np.radians([0, 0, 0, 0, 0, 0])
 
-    angles = np.radians([1, 1, 1, 1, 1, 1])
+    # kin = RobotKinematics(arm_config)
+    # tcp_pose, _, _ = kin.FK(angles)
 
-    kin = RobotKinematics(arm_config)
-    tcp_pose, _, _ = kin.FK(angles)
+    # # tcp_pose
+    # joint_pose1, joint_pose2 = kin.IK(tcp_pose)
 
-    # tcp_pose
-    joint_pose1, joint_pose2 = kin.IK(tcp_pose)
-
-    print(f"imput angles: {np.round(angles, 3)}")
-    print()
-    print(f"FK sol: {np.around(tcp_pose, 3)}")
-    print(f"verify FK tcp_pose:{kin.verify_Kinematics(tcp_pose, FK_IK = False)}")
-    print()
-    print(f"IK sol1: {np.round(joint_pose1, 3)}")
-    print(f"IK sol2: {np.round(joint_pose2, 3)}")
-    print()
-    print(f"verify IK solution 1:{kin.verify_Kinematics(joint_pose1)[0]}")
-    print(f"verify IK solution 2:{kin.verify_Kinematics(joint_pose2)[0]}")
-    print()
+    # print(f"imput angles: {np.round(angles, 3)}")
+    # print()
+    # print(f"FK sol: {np.around(tcp_pose, 3)}")
+    # print(f"verify FK tcp_pose:{kin.verify_Kinematics(tcp_pose, FK_IK = False)}")
+    # print()
+    # print(f"IK sol1: {np.round(joint_pose1, 3)}")
+    # print(f"IK sol2: {np.round(joint_pose2, 3)}")
+    # print()
+    # print(f"verify IK solution 1:{kin.verify_Kinematics(joint_pose1)[0]}")
+    # print(f"verify IK solution 2:{kin.verify_Kinematics(joint_pose2)[0]}")
+    # print()
 
 
-    # app = App()
-    # app.mainloop()
+    app = App()
+    app.mainloop()
     
 
 

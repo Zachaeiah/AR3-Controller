@@ -261,3 +261,552 @@ KeyError: <class 'GUI_pages.SimulationPage.SimulationPage'>
 2025-06-19 13:53:34,000 - __main__ - INFO - Icon assets loaded
 2025-06-19 13:53:34,009 - __main__ - DEBUG - Initializing UI Setup for App
 2025-06-19 13:53:34,177 - __main__ - DEBUG - Switching to Simulation
+2025-06-20 17:44:17,747 - __main__ - INFO - Robot connect State: False
+2025-06-20 17:44:17,747 - __main__ - INFO - Logging level: 10
+2025-06-20 17:44:17,747 - __main__ - INFO - Robot connect State: False
+2025-06-20 17:44:17,747 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-20 17:44:17,788 - __main__ - INFO - Icon assets loaded
+2025-06-20 17:44:17,791 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-20 17:44:17,832 - __main__ - DEBUG - Switching to Simulation
+2025-06-20 17:45:07,410 - __main__ - DEBUG - Switching to Console
+2025-06-20 17:45:07,732 - __main__ - DEBUG - Switching to Connection
+2025-06-20 17:45:08,113 - __main__ - DEBUG - Switching to Project Manager
+2025-06-20 17:45:08,465 - __main__ - DEBUG - Switching to Diagnostics
+2025-06-20 17:45:08,777 - __main__ - DEBUG - Switching to Settings
+2025-06-20 17:45:09,425 - __main__ - DEBUG - Switching to ProgramEditorPage
+2025-06-20 17:45:10,696 - __main__ - DEBUG - Switching to Settings
+2025-06-20 17:46:59,883 - __main__ - DEBUG - Switching to Simulation
+2025-06-20 17:47:00,134 - __main__ - DEBUG - Switching to ProgramEditorPage
+2025-06-20 17:47:01,045 - __main__ - DEBUG - Switching to Home
+2025-06-20 17:47:05,930 - __main__ - DEBUG - Switching to ProgramEditorPage
+2025-06-20 17:47:06,841 - __main__ - DEBUG - Switching to Simulation
+2025-06-20 17:47:07,811 - __main__ - DEBUG - Switching to Console
+2025-06-20 17:47:09,118 - __main__ - DEBUG - Switching to Connection
+2025-06-20 17:47:09,428 - __main__ - DEBUG - Switching to Project Manager
+2025-06-20 17:47:09,794 - __main__ - DEBUG - Switching to Connection
+2025-06-20 17:47:10,177 - __main__ - DEBUG - Switching to Console
+2025-06-20 17:47:10,832 - __main__ - DEBUG - Switching to Simulation
+2025-06-20 18:49:58,941 - __main__ - INFO - Logging level: 10
+2025-06-20 18:51:00,872 - __main__ - INFO - Logging level: 10
+2025-06-20 18:51:00,872 - __main__ - INFO - Robot connect State: False
+2025-06-20 18:51:00,872 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-20 18:51:00,884 - __main__ - INFO - Icon assets loaded
+2025-06-20 18:51:00,886 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-20 18:51:00,923 - __main__ - DEBUG - Switching to Simulation
+2025-06-20 18:52:51,482 - __main__ - INFO - Logging level: 10
+2025-06-20 18:52:51,482 - __main__ - INFO - Robot connect State: False
+2025-06-20 18:52:51,482 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-20 18:52:51,492 - __main__ - INFO - Icon assets loaded
+2025-06-20 18:52:51,495 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-20 18:52:51,538 - __main__ - DEBUG - Switching to Simulation
+2025-06-20 18:54:55,573 - __main__ - INFO - Logging level: 10
+2025-06-20 18:54:55,573 - __main__ - INFO - Robot connect State: False
+2025-06-20 18:54:55,573 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-20 18:54:55,584 - __main__ - INFO - Icon assets loaded
+2025-06-20 18:54:55,586 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-20 18:54:55,614 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:26:40,367 - __main__ - INFO - Logging level: 10
+2025-06-22 19:26:40,367 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:26:40,368 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:28:11,328 - __main__ - INFO - Logging level: 10
+2025-06-22 19:28:11,328 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:28:11,328 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:28:11,376 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:28:11,380 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:28:11,416 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:30:19,643 - __main__ - INFO - Logging level: 10
+2025-06-22 19:30:19,643 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:30:19,644 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:30:19,655 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:30:19,658 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:30:19,690 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:32:29,277 - __main__ - INFO - Logging level: 10
+2025-06-22 19:32:29,277 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:32:29,277 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:32:29,288 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:32:29,291 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:32:29,322 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:33:29,354 - __main__ - INFO - Logging level: 10
+2025-06-22 19:33:29,354 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:33:29,354 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:33:29,364 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:33:29,367 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:33:29,398 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:37:03,163 - __main__ - INFO - Logging level: 10
+2025-06-22 19:37:03,163 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:37:03,164 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:37:03,173 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:37:03,176 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:37:03,208 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:41:23,094 - __main__ - INFO - Logging level: 10
+2025-06-22 19:41:23,095 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:41:23,095 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:41:23,106 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:41:23,108 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:41:23,139 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:42:10,306 - __main__ - INFO - Logging level: 10
+2025-06-22 19:42:10,306 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:42:10,306 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:42:10,317 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:42:10,320 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:42:10,359 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:46:13,273 - __main__ - INFO - Logging level: 10
+2025-06-22 19:46:13,273 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:46:13,273 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:46:13,283 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:46:13,286 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:46:13,319 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:51:02,968 - __main__ - INFO - Logging level: 10
+2025-06-22 19:51:02,968 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:51:02,968 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:51:02,979 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:51:02,981 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:51:03,013 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:51:32,433 - __main__ - INFO - Logging level: 10
+2025-06-22 19:51:32,433 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:51:32,433 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:51:32,444 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:51:32,447 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:51:32,479 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:52:12,765 - __main__ - INFO - Logging level: 10
+2025-06-22 19:52:12,765 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:52:12,765 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:52:12,776 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:52:12,779 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:52:12,817 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:56:25,563 - __main__ - INFO - Logging level: 10
+2025-06-22 19:56:25,563 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:56:25,563 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:56:25,575 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:56:25,578 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:56:25,619 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:57:54,475 - __main__ - INFO - Logging level: 10
+2025-06-22 19:57:54,475 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:57:54,475 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:57:54,487 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:57:54,491 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:57:54,525 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 19:58:42,033 - __main__ - WARNING - Invalid input values.
+2025-06-22 19:59:50,092 - __main__ - INFO - Logging level: 10
+2025-06-22 19:59:50,092 - __main__ - INFO - Robot connect State: False
+2025-06-22 19:59:50,093 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 19:59:50,106 - __main__ - INFO - Icon assets loaded
+2025-06-22 19:59:50,110 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 19:59:50,146 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:00:22,427 - __main__ - INFO - Logging level: 10
+2025-06-22 20:00:22,427 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:00:22,429 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:00:22,439 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:00:22,443 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:00:22,492 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:06:03,780 - __main__ - INFO - Logging level: 10
+2025-06-22 20:06:03,780 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:06:03,780 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:06:03,791 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:06:03,793 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:06:03,826 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:06:54,866 - __main__ - INFO - Logging level: 10
+2025-06-22 20:06:54,866 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:06:54,866 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:06:54,877 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:06:54,880 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:06:54,914 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:08:00,792 - __main__ - INFO - Logging level: 10
+2025-06-22 20:08:00,792 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:08:00,792 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:08:00,805 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:08:00,808 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:08:00,848 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:13:14,531 - __main__ - INFO - Logging level: 10
+2025-06-22 20:13:14,531 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:13:14,531 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:13:14,541 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:13:14,545 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:13:14,578 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:17:12,217 - __main__ - INFO - Logging level: 10
+2025-06-22 20:17:12,217 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:17:12,217 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:17:12,227 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:17:12,230 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:17:12,263 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:31:38,221 - __main__ - INFO - Logging level: 10
+2025-06-22 20:31:38,221 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:31:38,222 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:31:38,233 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:31:38,236 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:31:38,268 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:34:29,335 - __main__ - INFO - Logging level: 10
+2025-06-22 20:34:29,335 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:34:29,335 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:34:29,347 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:34:29,350 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:34:29,384 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:35:22,501 - __main__ - INFO - Logging level: 10
+2025-06-22 20:35:22,501 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:35:22,501 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:35:22,564 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:35:22,568 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:35:22,632 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:35:33,239 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-22 20:36:49,141 - __main__ - INFO - Logging level: 10
+2025-06-22 20:36:49,141 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:36:49,141 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:36:49,152 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:36:49,155 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:36:49,191 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:37:19,567 - __main__ - INFO - Logging level: 10
+2025-06-22 20:37:19,568 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:37:19,568 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:37:19,579 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:37:19,582 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:37:19,614 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:43:55,749 - __main__ - INFO - Logging level: 10
+2025-06-22 20:43:55,749 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:43:55,749 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:43:55,760 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:43:55,763 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:43:55,767 - __main__ - ERROR - Failed to create page SimulationPage: Length of angles does not match number of robot links.
+Traceback (most recent call last):
+  File "d:\Youtube\AR3 Controller\Code\python\ARM3_IDE\main.py", line 126, in create_pages
+    page: PageBase = PageClass(self.container, self, logger=self.logger)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Youtube\AR3 Controller\Code\python\ARM3_IDE\GUI_pages\SimulationPage.py", line 47, in __init__
+    self.init_tcp_pose, _, _ = self.Kinematics.FK(self.HOME_POSE)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Youtube\AR3 Controller\Code\python\ARM3_IDE\robot\RobotKinematics.py", line 252, in FK
+    raise ValueError("Length of angles does not match number of robot links.")
+ValueError: Length of angles does not match number of robot links.
+2025-06-22 20:43:55,776 - __main__ - ERROR - Exception in App.switch_page: <class 'GUI_pages.SimulationPage.SimulationPage'>
+Traceback (most recent call last):
+  File "d:\Youtube\AR3 Controller\Code\python\ARM3_IDE\utils\logging_helpers.py", line 47, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Youtube\AR3 Controller\Code\python\ARM3_IDE\main.py", line 240, in switch_page
+    frame: PageBase = self.frames[page_class]
+                      ~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: <class 'GUI_pages.SimulationPage.SimulationPage'>
+2025-06-22 20:43:57,636 - __main__ - ERROR - Exception in App.switch_page: <class 'GUI_pages.SimulationPage.SimulationPage'>
+Traceback (most recent call last):
+  File "d:\Youtube\AR3 Controller\Code\python\ARM3_IDE\utils\logging_helpers.py", line 47, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Youtube\AR3 Controller\Code\python\ARM3_IDE\main.py", line 240, in switch_page
+    frame: PageBase = self.frames[page_class]
+                      ~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: <class 'GUI_pages.SimulationPage.SimulationPage'>
+2025-06-22 20:46:05,910 - __main__ - INFO - Logging level: 10
+2025-06-22 20:46:05,910 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:46:05,910 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:46:05,920 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:46:05,923 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:46:05,954 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:47:11,362 - __main__ - INFO - Logging level: 10
+2025-06-22 20:47:11,364 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:47:11,364 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:47:11,377 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:47:11,379 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:47:11,447 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:47:32,095 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-22 20:48:44,791 - __main__ - INFO - Logging level: 10
+2025-06-22 20:48:44,791 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:48:44,792 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:48:44,806 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:48:44,809 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:48:44,875 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:48:52,536 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-22 20:51:51,798 - __main__ - INFO - Logging level: 10
+2025-06-22 20:51:51,798 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:51:51,800 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:51:51,813 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:51:51,817 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:51:51,890 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:52:00,975 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-22 20:54:22,542 - __main__ - INFO - Logging level: 10
+2025-06-22 20:54:22,542 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:54:22,543 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:54:22,556 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:54:22,559 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:54:22,625 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:54:30,392 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-22 20:54:56,497 - __main__ - INFO - Logging level: 10
+2025-06-22 20:54:56,497 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:54:56,497 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:54:56,513 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:54:56,516 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:54:56,582 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:55:06,074 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-22 20:56:20,168 - __main__ - INFO - Logging level: 10
+2025-06-22 20:56:20,168 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:56:20,168 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:56:20,204 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:56:20,207 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:56:20,241 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:57:29,193 - __main__ - WARNING - Both IK solutions are invalid: joint 4 and joint 3 out of range.
+2025-06-22 20:58:22,716 - __main__ - INFO - Logging level: 10
+2025-06-22 20:58:22,716 - __main__ - INFO - Robot connect State: False
+2025-06-22 20:58:22,716 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 20:58:22,726 - __main__ - INFO - Icon assets loaded
+2025-06-22 20:58:22,730 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 20:58:22,776 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 20:58:34,949 - __main__ - WARNING - Both IK solutions are invalid: joint 1 and joint 1 out of range.
+2025-06-22 20:58:39,445 - __main__ - WARNING - Both IK solutions are invalid: joint 1 and joint 1 out of range.
+2025-06-22 20:58:57,401 - __main__ - WARNING - Both IK solutions are invalid: joint 2 and joint 2 out of range.
+2025-06-22 20:59:50,432 - __main__ - WARNING - Both IK solutions are invalid: joint 3 and joint 4 out of range.
+2025-06-22 20:59:59,589 - __main__ - WARNING - Both IK solutions are invalid: joint 2 and joint 2 out of range.
+2025-06-22 21:00:16,480 - __main__ - WARNING - Both IK solutions are invalid: joint 2 and joint 2 out of range.
+2025-06-22 21:00:30,017 - __main__ - WARNING - Both IK solutions are invalid: joint 2 and joint 2 out of range.
+2025-06-22 21:00:36,066 - __main__ - WARNING - Both IK solutions are invalid: joint 2 and joint 2 out of range.
+2025-06-22 21:00:41,672 - __main__ - WARNING - Both IK solutions are invalid: joint 2 and joint 2 out of range.
+2025-06-22 21:00:50,417 - __main__ - WARNING - Both IK solutions are invalid: joint 2 and joint 2 out of range.
+2025-06-22 21:01:19,700 - __main__ - WARNING - Both IK solutions are invalid: joint 3 and joint 4 out of range.
+2025-06-22 21:12:52,525 - __main__ - INFO - Logging level: 10
+2025-06-22 21:12:52,525 - __main__ - INFO - Robot connect State: False
+2025-06-22 21:12:52,525 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 21:12:52,536 - __main__ - INFO - Icon assets loaded
+2025-06-22 21:12:52,539 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 21:12:52,573 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 21:21:56,676 - __main__ - INFO - Logging level: 10
+2025-06-22 21:21:56,676 - __main__ - INFO - Robot connect State: False
+2025-06-22 21:21:56,676 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 21:21:56,687 - __main__ - INFO - Icon assets loaded
+2025-06-22 21:21:56,691 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 21:21:56,725 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 21:22:47,310 - __main__ - INFO - Logging level: 10
+2025-06-22 21:22:47,310 - __main__ - INFO - Robot connect State: False
+2025-06-22 21:22:47,311 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 21:22:47,322 - __main__ - INFO - Icon assets loaded
+2025-06-22 21:22:47,325 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 21:22:47,364 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 21:23:27,462 - __main__ - WARNING - Both IK solutions are invalid: joint 1 and joint 1 out of range.
+2025-06-22 21:23:38,898 - __main__ - WARNING - Both IK solutions are invalid: joint 1 and joint 1 out of range.
+2025-06-22 21:24:07,944 - __main__ - INFO - Logging level: 10
+2025-06-22 21:24:07,944 - __main__ - INFO - Robot connect State: False
+2025-06-22 21:24:07,944 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 21:24:07,985 - __main__ - INFO - Icon assets loaded
+2025-06-22 21:24:07,988 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 21:24:08,057 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 21:24:16,469 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-22 21:28:21,917 - __main__ - INFO - Logging level: 10
+2025-06-22 21:28:21,917 - __main__ - INFO - Robot connect State: False
+2025-06-22 21:28:21,917 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 21:28:21,932 - __main__ - INFO - Icon assets loaded
+2025-06-22 21:28:21,936 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 21:28:21,977 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 21:33:26,417 - __main__ - INFO - Logging level: 10
+2025-06-22 21:33:26,417 - __main__ - INFO - Robot connect State: False
+2025-06-22 21:33:26,417 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 21:33:26,428 - __main__ - INFO - Icon assets loaded
+2025-06-22 21:33:26,432 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 21:33:26,464 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 21:35:50,419 - __main__ - INFO - Logging level: 10
+2025-06-22 21:35:50,419 - __main__ - INFO - Robot connect State: False
+2025-06-22 21:35:50,419 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 21:35:50,430 - __main__ - INFO - Icon assets loaded
+2025-06-22 21:35:50,434 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 21:35:50,466 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 21:38:09,083 - __main__ - WARNING - Both IK solutions are invalid: joint 3 and joint 4 out of range.
+2025-06-22 21:38:28,895 - __main__ - WARNING - Both IK solutions are invalid: joint 3 and joint 4 out of range.
+2025-06-22 21:38:31,247 - __main__ - WARNING - Both IK solutions are invalid: joint 3 and joint 4 out of range.
+2025-06-22 21:38:34,057 - __main__ - WARNING - Both IK solutions are invalid: joint 3 and joint 4 out of range.
+2025-06-22 21:38:38,921 - __main__ - WARNING - Both IK solutions are invalid: joint 3 and joint 4 out of range.
+2025-06-22 21:40:48,709 - __main__ - INFO - Logging level: 10
+2025-06-22 21:40:48,709 - __main__ - INFO - Robot connect State: False
+2025-06-22 21:40:48,709 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 21:40:48,719 - __main__ - INFO - Icon assets loaded
+2025-06-22 21:40:48,723 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 21:40:48,758 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 21:58:05,562 - __main__ - INFO - Logging level: 10
+2025-06-22 21:58:05,562 - __main__ - INFO - Robot connect State: False
+2025-06-22 21:58:05,562 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 21:58:05,576 - __main__ - INFO - Icon assets loaded
+2025-06-22 21:58:05,578 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 21:58:05,645 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 21:58:10,268 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-22 21:59:44,763 - __main__ - INFO - Logging level: 10
+2025-06-22 21:59:44,763 - __main__ - INFO - Robot connect State: False
+2025-06-22 21:59:44,765 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 21:59:44,778 - __main__ - INFO - Icon assets loaded
+2025-06-22 21:59:44,781 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 21:59:44,848 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 22:00:04,572 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-22 22:03:08,691 - __main__ - INFO - Logging level: 10
+2025-06-22 22:03:08,692 - __main__ - INFO - Robot connect State: False
+2025-06-22 22:03:08,693 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 22:03:08,706 - __main__ - INFO - Icon assets loaded
+2025-06-22 22:03:08,709 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 22:03:08,783 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 22:03:11,544 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-22 22:07:13,785 - __main__ - INFO - Logging level: 10
+2025-06-22 22:07:13,785 - __main__ - INFO - Robot connect State: False
+2025-06-22 22:07:13,785 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 22:07:13,796 - __main__ - INFO - Icon assets loaded
+2025-06-22 22:07:13,799 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 22:07:13,835 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 22:07:17,461 - __main__ - DEBUG - Switching to Console
+2025-06-22 22:07:18,813 - __main__ - DEBUG - Switching to Connection
+2025-06-22 22:07:19,201 - __main__ - DEBUG - Switching to Project Manager
+2025-06-22 22:07:20,044 - __main__ - DEBUG - Switching to Home
+2025-06-22 22:07:20,886 - __main__ - DEBUG - Switching to ProgramEditorPage
+2025-06-22 22:07:21,268 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 22:07:51,749 - __main__ - INFO - Logging level: 10
+2025-06-22 22:07:51,749 - __main__ - INFO - Robot connect State: False
+2025-06-22 22:07:51,749 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 22:07:51,761 - __main__ - INFO - Icon assets loaded
+2025-06-22 22:07:51,764 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 22:07:51,806 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 22:11:11,012 - __main__ - INFO - Logging level: 10
+2025-06-22 22:11:11,012 - __main__ - INFO - Robot connect State: False
+2025-06-22 22:11:11,013 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 22:11:11,026 - __main__ - INFO - Icon assets loaded
+2025-06-22 22:11:11,030 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 22:11:11,094 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 22:11:14,052 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-22 22:11:59,816 - __main__ - INFO - Logging level: 10
+2025-06-22 22:11:59,816 - __main__ - INFO - Robot connect State: False
+2025-06-22 22:11:59,817 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 22:11:59,830 - __main__ - INFO - Icon assets loaded
+2025-06-22 22:11:59,834 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 22:11:59,900 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 22:12:03,286 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-22 22:14:41,009 - __main__ - INFO - Logging level: 10
+2025-06-22 22:14:41,010 - __main__ - INFO - Robot connect State: False
+2025-06-22 22:14:41,010 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 22:14:41,022 - __main__ - INFO - Icon assets loaded
+2025-06-22 22:14:41,025 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 22:14:41,063 - __main__ - DEBUG - Switching to Simulation
+2025-06-22 22:15:20,202 - __main__ - INFO - Logging level: 10
+2025-06-22 22:15:20,203 - __main__ - INFO - Robot connect State: False
+2025-06-22 22:15:20,203 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-22 22:15:20,214 - __main__ - INFO - Icon assets loaded
+2025-06-22 22:15:20,217 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-22 22:15:20,254 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 08:07:21,707 - __main__ - INFO - Logging level: 10
+2025-06-23 08:07:21,707 - __main__ - INFO - Robot connect State: False
+2025-06-23 08:07:21,709 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 08:07:21,721 - __main__ - INFO - Icon assets loaded
+2025-06-23 08:07:21,722 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 08:07:21,758 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 08:09:09,966 - __main__ - WARNING - Both IK solutions are invalid: joint 3 and joint 4 out of range.
+2025-06-23 08:10:22,091 - __main__ - WARNING - Both IK solutions are invalid: joint 5 and joint 3 out of range.
+2025-06-23 08:10:38,108 - __main__ - WARNING - Both IK solutions are invalid: joint 5 and joint 3 out of range.
+2025-06-23 08:10:40,908 - __main__ - WARNING - Both IK solutions are invalid: joint 3 and joint 4 out of range.
+2025-06-23 08:10:47,376 - __main__ - WARNING - Both IK solutions are invalid: joint 3 and joint 4 out of range.
+2025-06-23 08:13:01,423 - __main__ - WARNING - Both IK solutions are invalid: joint 3 and joint 5 out of range.
+2025-06-23 08:13:34,770 - __main__ - WARNING - Both IK solutions are invalid: joint 3 and joint 5 out of range.
+2025-06-23 08:13:41,228 - __main__ - WARNING - Both IK solutions are invalid: joint 1 and joint 1 out of range.
+2025-06-23 08:13:50,950 - __main__ - WARNING - Both IK solutions are invalid: joint 1 and joint 1 out of range.
+2025-06-23 08:15:50,733 - __main__ - INFO - Logging level: 10
+2025-06-23 08:15:50,733 - __main__ - INFO - Robot connect State: False
+2025-06-23 08:15:50,733 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 08:15:50,747 - __main__ - INFO - Icon assets loaded
+2025-06-23 08:15:50,749 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 08:15:50,812 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 08:15:55,753 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-23 08:19:15,525 - __main__ - WARNING - Invalid input values.
+2025-06-23 08:19:28,198 - __main__ - INFO - Logging level: 10
+2025-06-23 08:19:28,198 - __main__ - INFO - Robot connect State: False
+2025-06-23 08:19:28,198 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 08:19:28,209 - __main__ - INFO - Icon assets loaded
+2025-06-23 08:19:28,211 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 08:19:28,242 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 08:19:32,075 - __main__ - WARNING - Both IK solutions are invalid: joint 1 and joint 1 out of range.
+2025-06-23 12:55:49,058 - __main__ - WARNING - Both IK solutions are invalid: joint 3 and joint 4 out of range.
+2025-06-23 12:56:19,482 - __main__ - INFO - Logging level: 10
+2025-06-23 12:56:19,482 - __main__ - INFO - Robot connect State: False
+2025-06-23 12:56:19,483 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 12:56:19,495 - __main__ - INFO - Icon assets loaded
+2025-06-23 12:56:19,497 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 12:56:19,560 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 12:57:28,830 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-23 13:49:19,244 - __main__ - INFO - Logging level: 10
+2025-06-23 13:49:19,245 - __main__ - INFO - Robot connect State: False
+2025-06-23 13:49:19,245 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 13:49:19,258 - __main__ - INFO - Icon assets loaded
+2025-06-23 13:49:19,260 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 13:49:19,322 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 13:51:22,751 - matplotlib.pyplot - DEBUG - Loaded backend tkagg version unknown.
+2025-06-23 14:09:10,717 - __main__ - INFO - Logging level: 10
+2025-06-23 14:09:10,717 - __main__ - INFO - Robot connect State: False
+2025-06-23 14:09:10,718 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 14:09:10,727 - __main__ - INFO - Icon assets loaded
+2025-06-23 14:09:10,730 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 14:09:10,759 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 14:10:25,712 - __main__ - WARNING - Both IK solutions are invalid: Sol1-joints [3, 4, 5] Sol12-joints [4]
+2025-06-23 14:19:09,847 - __main__ - INFO - Logging level: 10
+2025-06-23 14:19:09,847 - __main__ - INFO - Robot connect State: False
+2025-06-23 14:19:09,847 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 14:19:09,858 - __main__ - INFO - Icon assets loaded
+2025-06-23 14:19:09,861 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 14:19:09,890 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 14:22:17,767 - __main__ - INFO - Logging level: 10
+2025-06-23 14:22:17,767 - __main__ - INFO - Robot connect State: False
+2025-06-23 14:22:17,767 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 14:22:17,778 - __main__ - INFO - Icon assets loaded
+2025-06-23 14:22:17,780 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 14:22:17,809 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 14:23:01,944 - __main__ - INFO - Logging level: 10
+2025-06-23 14:23:01,944 - __main__ - INFO - Robot connect State: False
+2025-06-23 14:23:01,944 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 14:23:01,955 - __main__ - INFO - Icon assets loaded
+2025-06-23 14:23:01,957 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 14:23:01,992 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 14:23:06,119 - __main__ - INFO - Logging level: 10
+2025-06-23 14:23:06,119 - __main__ - INFO - Robot connect State: False
+2025-06-23 14:23:06,119 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 14:23:06,129 - __main__ - INFO - Icon assets loaded
+2025-06-23 14:23:06,131 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 14:23:06,162 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 14:23:54,234 - __main__ - INFO - Logging level: 10
+2025-06-23 14:23:54,234 - __main__ - INFO - Robot connect State: False
+2025-06-23 14:23:54,234 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 14:23:54,245 - __main__ - INFO - Icon assets loaded
+2025-06-23 14:23:54,247 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 14:23:54,288 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 15:36:36,751 - __main__ - INFO - Logging level: 10
+2025-06-23 15:36:36,751 - __main__ - INFO - Robot connect State: False
+2025-06-23 15:36:36,751 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 15:36:36,762 - __main__ - INFO - Icon assets loaded
+2025-06-23 15:36:36,764 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 15:36:36,801 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 15:38:53,153 - __main__ - INFO - Logging level: 10
+2025-06-23 15:38:53,153 - __main__ - INFO - Robot connect State: False
+2025-06-23 15:38:53,154 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 15:38:53,163 - __main__ - INFO - Icon assets loaded
+2025-06-23 15:38:53,166 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 15:38:53,196 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 15:42:14,955 - __main__ - INFO - Logging level: 10
+2025-06-23 15:42:14,955 - __main__ - INFO - Robot connect State: False
+2025-06-23 15:42:14,955 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 15:42:14,966 - __main__ - INFO - Icon assets loaded
+2025-06-23 15:42:14,968 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 15:42:14,999 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 16:09:48,333 - __main__ - INFO - Logging level: 10
+2025-06-23 16:09:48,333 - __main__ - INFO - Robot connect State: False
+2025-06-23 16:09:48,333 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 16:09:48,344 - __main__ - INFO - Icon assets loaded
+2025-06-23 16:09:48,347 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 16:09:48,376 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 16:10:36,724 - __main__ - INFO - Logging level: 10
+2025-06-23 16:10:36,724 - __main__ - INFO - Robot connect State: False
+2025-06-23 16:10:36,725 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 16:10:36,736 - __main__ - INFO - Icon assets loaded
+2025-06-23 16:10:36,739 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 16:10:36,773 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 16:13:53,789 - __main__ - INFO - Logging level: 10
+2025-06-23 16:13:53,789 - __main__ - INFO - Robot connect State: False
+2025-06-23 16:13:53,789 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 16:13:53,800 - __main__ - INFO - Icon assets loaded
+2025-06-23 16:13:53,803 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 16:13:53,839 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 16:15:15,773 - __main__ - INFO - Logging level: 10
+2025-06-23 16:15:15,774 - __main__ - INFO - Robot connect State: False
+2025-06-23 16:15:15,774 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 16:15:15,784 - __main__ - INFO - Icon assets loaded
+2025-06-23 16:15:15,787 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 16:15:15,821 - __main__ - DEBUG - Switching to Simulation
+2025-06-23 16:24:50,995 - __main__ - INFO - Logging level: 10
+2025-06-23 16:24:50,996 - __main__ - INFO - Robot connect State: False
+2025-06-23 16:24:50,996 - __main__ - INFO - Loading robot configuration: data/Configs/robot_arm_config.json
+2025-06-23 16:24:51,006 - __main__ - INFO - Icon assets loaded
+2025-06-23 16:24:51,009 - __main__ - DEBUG - Initializing UI Setup for App
+2025-06-23 16:24:51,038 - __main__ - DEBUG - Switching to Simulation

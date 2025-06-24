@@ -1,6 +1,8 @@
 import numpy as np
+from scipy.spatial.transform import Rotation as R
 from typing import List, Optional, Union
 import logging
+from scipy.spatial.transform import Rotation as R
 from robot.RobotArmConfig import RobotArmConfig 
 from robot.MotorLink import MotorLink
 from robot.ToolLink import ToolLink
@@ -69,97 +71,120 @@ class RobotKinematics:
             rotation_matrix (np.array): A 3x3 rotation matrix.
 
         Returns:
-            np.array: A 4-element array representing the quaternion.
+            np.array:  quaternion [x, y, z, w].
         """
-        R:np.ndarray = np.array(rotation_matrix, dtype=np.float64)
         
-        trace:float = np.trace(R)
+        # Convert to quaternion
+        r = R.from_matrix(rotation_matrix)
+        quat = r.as_quat()  # [x, y, z, w]
 
-        S:float = 0
-        qw:float = 0
-        qx:float = 0
-        qy:float = 0
-        qz:float = 0
+        return quat
+    
+    def rotation_matrix_to_euler(self, rotation_matrix: np.ndarray) -> np.ndarray:
+        """_summary_
 
-        
-        if trace > 0:
-            S = 2.0 * np.sqrt(trace + 1.0)
-            qw = 0.25 * S
-            qx = (R[2, 1] - R[1, 2]) / S
-            qy = (R[0, 2] - R[2, 0]) / S
-            qz = (R[1, 0] - R[0, 1]) / S
-        elif (R[0, 0] > R[1, 1]) and (R[0, 0] > R[2, 2]):
-            S = 2.0 * np.sqrt(1.0 + R[0, 0] - R[1, 1] - R[2, 2])
-            qw = (R[2, 1] - R[1, 2]) / S
-            qx = 0.25 * S
-            qy = (R[0, 1] + R[1, 0]) / S
-            qz = (R[0, 2] + R[2, 0]) / S
-        elif R[1, 1] > R[2, 2]:
-            S = 2.0 * np.sqrt(1.0 + R[1, 1] - R[0, 0] - R[2, 2])
-            qw = (R[0, 2] - R[2, 0]) / S
-            qx = (R[0, 1] + R[1, 0]) / S
-            qy = 0.25 * S
-            qz = (R[1, 2] + R[2, 1]) / S
-        else:
-            S = 2.0 * np.sqrt(1.0 + R[2, 2] - R[0, 0] - R[1, 1])
-            qw = (R[1, 0] - R[0, 1]) / S
-            qx = (R[0, 2] + R[2, 0]) / S
-            qy = (R[1, 2] + R[2, 1]) / S
-            qz = 0.25 * S
-        
-        quaternion = np.array([qw, qx, qy, qz])
+        Args:
+            rotation_matrix (np.ndarray): _description_
 
-        return quaternion
+        Returns:
+            np.ndarray: _description_
+        """
+
+        # Convert to Rotation object
+        r = R.from_matrix(rotation_matrix)
+
+        # Convert to Euler angles (in radians)
+        euler_angles = r.as_euler('xyz', degrees=False)  # Change 'xyz' as needed
+
+        return euler_angles
     
     def quaternion_to_rotation_matrix(self, quaternion: np.ndarray) -> np.ndarray:
         """
         Convert a quaternion into a 3x3 rotation matrix.
 
         Args:
-            quaternion (list or np.array): A 4-element list or array representing the quaternion.
+            quaternion (list or np.array): quaternion [x, y, z, w].
 
         Returns:
             np.array: A 3x3 rotation matrix.
         """
-        q:np.ndarray  = np.array(quaternion, dtype=np.float64)
-        q = q / np.linalg.norm(q)
+        # Create Rotation object
+        r = R.from_quat(quaternion)
 
-        w, x, y, z = q
-        rotation_matrix: np.ndarray = np.array([[1 - 2*y*y - 2*z*z, 2*x*y - 2*w*z, 2*x*z + 2*w*y],
-                                    [2*x*y + 2*w*z, 1 - 2*x*x - 2*z*z, 2*y*z - 2*w*x],
-                                    [2*x*z - 2*w*y, 2*y*z + 2*w*x, 1 - 2*x*x - 2*y*y]])
+        # Convert to rotation matrix
+        rotation_matrix = r.as_matrix()
 
         return rotation_matrix
     
-    def quaternion_to_euler(self, quaternion):
+    def quaternion_to_euler(self, quaternion: np.ndarray) ->np.ndarray:
         """Convert quaternion to Euler angles.
 
         Args:
-            quaternion (np.array): Quaternion in the form [w, x, y, z].
+            quaternion (np.ndarray): Quaternion in the form [x, y, z, w].
 
         Returns:
-            np.array: Euler angles in the form [roll, pitch, yaw].
+            np.ndarray: Euler angles in the form [U, V, W].
         """
-        w, x, y, z = quaternion
-        # Roll (x-axis rotation)
-        sinr_cosp = 2.0 * (w * x + y * z)
-        cosr_cosp = 1.0 - 2.0 * (x * x + y * y)
-        roll = np.arctan2(sinr_cosp, cosr_cosp)
+        # Create rotation object
+        r = R.from_quat(quaternion)
 
-        # Pitch (y-axis rotation)
-        sinp = 2.0 * (w * y - z * x)
-        if np.abs(sinp) >= 1:
-            pitch = np.sign(sinp) * np.pi / 2  # Use +/-90 degrees if out of range
-        else:
-            pitch = np.arcsin(sinp)
+        # Convert to Euler angles (radians)
+        euler_angles = r.as_euler('xyz', degrees=False)  # Use desired axis order
 
-        # Yaw (z-axis rotation)
-        siny_cosp = 2.0 * (w * z + x * y)
-        cosy_cosp = 1.0 - 2.0 * (y * y + z * z)
-        yaw = np.arctan2(siny_cosp, cosy_cosp)
+        return euler_angles
+    
+    def euler_to_quaternion(self, euler_angles: np.ndarray[float]) -> np.ndarray[float]:
+        """_summary_
 
-        return np.array([roll, pitch, yaw])
+        Args:
+            euler_angles (np.ndarray[float]): _description_
+
+        Returns:
+            np.ndarray[float]: quaternion [x, y, z, w]
+        """
+        # Convert to quaternion
+        r = R.from_euler('xyz', euler_angles, degrees=False)  # Change 'xyz' as needed
+        quat = r.as_quat()  # Format: [x, y, z, w]
+        return quat
+    
+    def euler_to_rotation_matrix(self, euler_angles: np.ndarray[float]) -> np.ndarray[float]:
+        """_summary_
+
+        Args:
+            euler_angles (np.ndarray[float]): _description_
+
+        Returns:
+            np.ndarray[float]: _description_
+        """
+        # Create rotation object
+        r = R.from_euler('xyz', euler_angles, degrees=False)  # Change 'xyz' as needed
+
+        # Get rotation matrix
+        rotation_matrix = r.as_matrix()
+
+        return rotation_matrix
+
+    def rotate_quaternion(self, quat: np.ndarray[float],  axis_rotation : np.ndarray[float]) -> np.ndarray[float]:
+        """
+        Rotate a quaternion around the unit vectors.
+
+        Args:
+            quat (np.array): The original quaternion [w, x, y, z].
+            axis_rotation : np.ndarray[float] Angle to rotate around the unit vector (in radians).
+
+        Returns:
+            np.array: The rotated quaternion [w, x, y, z].
+        """
+        q_original = R.from_quat(quat)
+
+        # Create rotation quaternion from the three angles
+        q_rotation = R.from_euler('xyz', axis_rotation, degrees=False)
         
+       # Apply rotation: rotate original orientation by the new one
+        q_result = q_rotation * q_original  # or q_original * q_rotation depending on frame
+
+        return q_result
+    
     def FK(self, angles: np.ndarray) -> tuple[np.ndarray, list[np.ndarray], list[np.ndarray]]:
         """
         Perform forward kinematics using the given joint angles and return both TCP pose and intermediate matrices.
@@ -169,16 +194,16 @@ class RobotKinematics:
 
         Returns:
             tuple:
-                - np.ndarray: TCP pose as [X, Y, Z, qw, qx, qy, qz]
+                - np.ndarray: TCP pose as [X, Y, Z, qx, qy, qz, qw]
                 - list[np.ndarray]: List of intermediate transformation matrices (each A_i)
                 - list[np.ndarray]: List of transformation  (each T_current)
         """
         if len(angles) != (len(self.arm_config.links) - 1):
             raise ValueError("Length of angles does not match number of robot links.")
 
-        T_current = np.identity(4, dtype=np.float64)
-        T_all: list[np.ndarray] = []
-        T_tranform: list[np.ndarray] = []
+        Transformation = np.identity(4, dtype=np.float64)
+        Transformation_chain: list[np.ndarray] = []
+        Transform_stack: list[np.ndarray] = []
 
         for i, link in enumerate(self.arm_config.links):
             if isinstance(link, ToolLink):
@@ -189,28 +214,24 @@ class RobotKinematics:
                 A_i = self.DH_matrix(theta, link_params)
 
             
-            T_current = T_current @ A_i
-            T_tranform.append(A_i.copy())
-            T_all.append(T_current.copy())
+            Transformation = Transformation @ A_i
+            Transform_stack.append(A_i.copy())
+            Transformation_chain.append(Transformation.copy())
 
-            if self.logger:
-                self.logger.debug(f"Link {i}: A_i =\n{np.round(A_i, 4)}")
-                self.logger.debug(f"T (base to link {i}):\n{np.round(T_current, 4)}")
+        x, y, z = Transformation[0:3, 3]
+        R = Transformation[0:3, 0:3]
+        quaternion = self.rotation_matrix_to_quaternion(R)
 
-        x, y, z = T_current[0:3, 3]
-        R = T_current[0:3, 0:3]
-        tcp_quat = self.rotation_matrix_to_quaternion(R)
+        tcp_pose = np.concatenate(([x, y, z], quaternion))
 
-        tcp_pose = np.concatenate(([x, y, z], tcp_quat))
-
-        return tcp_pose, T_tranform, T_all
+        return tcp_pose, Transform_stack, Transformation_chain
     
     def IK (self, pose: np.ndarray[float]) -> tuple[np.ndarray, np.ndarray]:
         """
         Perform inverse kinematics given a 6-DOF TCP pose.
 
         Args:
-            pose (np.ndarray): TCP pose as [X, Y, Z, qw, qx, qy, qz]
+            pose (np.ndarray): TCP pose as [X, Y, Z, qx, qy, qz, qw]
 
         Returns:
             tuple[np.ndarray, np.ndarray]: Two possible IK solutions (in radians)
@@ -292,10 +313,8 @@ class RobotKinematics:
         sol2[5] = np.arctan2(-R_36[2, 1], R_36[2, 0])
 
         return sol1, sol2
-    
-
-    
-    def verify_Kinematics(self, pose: np.ndarray, FK_IK: bool = bool) -> list[tuple[bool, Optional[int]]]:
+       
+    def verify_Kinematics(self, pose: np.ndarray, FK_IK: bool = bool) -> tuple[tuple[bool, Optional[list[int]]]]:
         """
         Verify that joint angles are within mechanical limits.
 
@@ -310,7 +329,7 @@ class RobotKinematics:
                 If valid, failing_joint_index is None.
         """
 
-        def check_joint_limits(joint_angles: np.ndarray) -> tuple[bool, Optional[int]]:
+        def check_joint_limits(joint_angles: np.ndarray) -> tuple[bool, Optional[list[int]]]:
             """
             Checks whether the provided joint angles are within the allowed limits
             defined for each joint in the robot arm configuration.
@@ -322,27 +341,31 @@ class RobotKinematics:
             Returns:
                 tuple[bool, Optional[int]]: 
                     - A boolean indicating whether all joint angles are within their limits.
-                    - The index of the first joint that violates its limit (if any), or None if all are valid.
+                    - list of index that violates its limit (if any), or None if all are valid.
             """
+            limited_joints = []
+            valid = True
             for i, (angle, link) in enumerate(zip(joint_angles, self.arm_config.links)):
                 min_angle = link.motor_params["min_angle"]
                 max_angle = link.motor_params["max_angle"]
-                if not (min_angle < angle < max_angle):
+                if not (min_angle <= angle <= max_angle):
                     if self.logger:
                         self.logger.error(
                             f"Joint {i} angle {angle:.2f} out of range [{min_angle}, {max_angle}]"
                         )
-                    return False, i
-            return True, None
+                    limited_joints.append(i)
+                    valid = False
+                
+            return valid, limited_joints
 
         if FK_IK:
             valid, bad_index = check_joint_limits(pose)
-            return [(valid, bad_index), (valid, bad_index)]
+            return ((valid, bad_index), (valid, bad_index))
         else:
             joint_pose1, joint_pose2 = self.IK(pose)
             result1 = check_joint_limits(joint_pose1)
             result2 = check_joint_limits(joint_pose2)
-            return [result1, result2]
+            return (result1, result2)
 
     @staticmethod
     def print_matrices(matrices: list[np.ndarray]) -> None:
