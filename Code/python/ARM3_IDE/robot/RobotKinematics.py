@@ -226,7 +226,7 @@ class RobotKinematics:
 
         return tcp_pose, Transform_stack, Transformation_chain
     
-    def IK (self, pose: np.ndarray[float]) -> tuple[np.ndarray, np.ndarray]:
+    def IK (self, pose: np.ndarray[float]) -> tuple[np.ndarray[float], np.ndarray]:
         """
         Perform inverse kinematics given a 6-DOF TCP pose.
 
@@ -366,6 +366,35 @@ class RobotKinematics:
             result1 = check_joint_limits(joint_pose1)
             result2 = check_joint_limits(joint_pose2)
             return (result1, result2)
+        
+    def jacobian(self, transformation_chain: list[np.ndarray]) -> np.ndarray[float,float]:
+        """
+        Compute the 6x6 geometric Jacobian matrix for a serial manipulator.
+
+        Args:
+            transformation_chain (list[np.ndarray]): List of 4x4 transformation matrices
+                from base to each joint's coordinate frame. Must be length 6.
+
+        Returns:
+            np.ndarray: 6x6 Jacobian matrix. Top 3 rows are linear velocities, bottom 3 are angular velocities.
+        """
+        if len(transformation_chain) != 6:
+            raise ValueError(f"Expected 6 transformation matrices for a 6-DOF manipulator. got {len(transformation_chain)}")
+
+        jacobian = np.zeros((6, 6))
+        end_effector_pos = transformation_chain[-1][:3, 3]
+
+        for i in range(6):
+            z_axis = transformation_chain[i][:3, 2]   # Joint axis (z in DH convention)
+            origin = transformation_chain[i][:3, 3]   # Origin of the i-th frame
+
+            linear = np.cross(z_axis, end_effector_pos - origin)
+            angular = z_axis
+
+            jacobian[:3, i] = linear
+            jacobian[3:, i] = angular
+
+        return jacobian
 
     @staticmethod
     def print_matrices(matrices: list[np.ndarray]) -> None:

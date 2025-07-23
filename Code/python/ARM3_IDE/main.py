@@ -20,8 +20,8 @@ class App(tk.Tk):
     Args:
         tk (_type_): _description_
     """
-    config_path = "data/Configs/robot_arm_config.json"
-    pages = ALL_PROGRAM_PAGES
+    config_path:str = "data/Configs/robot_arm_config.json"
+    pages: list[PageBase] = ALL_PROGRAM_PAGES
     TOOLTIPS: dict[tk.Widget, str] = {}
     AssetsPaths: dict = {"folder": "assets/icons8-folder-50.png",
                          "file": "assets/icons8-file-26.png"}
@@ -41,11 +41,6 @@ class App(tk.Tk):
 
         self.Robot_connect_state: bool = False
         self.logger.info(f"Robot connect State: {self.Robot_connect_state}")
-
-        self.arm_config: RobotArmConfig = RobotArmConfig.from_json(self.config_path)
-        self.logger.info(f"Loading robot configuration: {self.config_path}")
-
-        self.Kinematics = RobotKinematics(self.arm_config)
 
         self.icons: dict[str, Image.Image] = {}
         self.frames: dict[PageBase, PageBase] = {}
